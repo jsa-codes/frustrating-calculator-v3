@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+
+#calculator {
+    width: 240px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    margin: 50px auto; 
+    
+}
+
+#display {
+    width: calc(100%);
+    /* Adjusted width to account for padding */
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-align: right;
+    box-sizing: border-box;
+    /* This ensures the padding is included in the total width */
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* ... Previous CSS ... */
+
+button {
+    padding: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    /* White text */
+}
+
+button:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge the button */
+}
+
+/* Color coding for the different types of buttons */
+button:nth-child(4n) {
+    /* Divide buttons */
+    background-color: #FF5733;
+}
+
+button:nth-child(4n-1) {
+    /* Multiply, Subtract, Add buttons */
+    background-color: #33C2FF;
+}
+
+button:nth-child(4n-2) {
+    /* Numbers and equals */
+    background-color: #FFC833;
+}
+
+button:nth-child(4n-3) {
+    /* Numbers */
+    background-color: #33FF57;
+}
+
+button[data-special='true'] {
+    /* For special buttons like "=" and "." */
+    background-color: #9933FF;
+}
