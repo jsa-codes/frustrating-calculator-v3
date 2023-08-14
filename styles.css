@@ -86,7 +86,7 @@ button[data-special='true'] {
 @media (max-width: 500px) {
     /* For mobile devices */
     #calculator {
-        width: 100%;
+        width: 80%;
         margin: 0;
     }
 
