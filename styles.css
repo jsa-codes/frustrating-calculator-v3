@@ -82,3 +82,15 @@ button[data-special='true'] {
     /* For special buttons like "=" and "." */
     background-color: #9933FF;
 }
+
+@media (max-width: 500px) {
+    /* For mobile devices */
+    #calculator {
+        width: 100%;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
